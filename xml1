@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookstore.xsl"?>
+<!DOCTYPE bookstore
+ [
+ <!ELEMENT book (title,author,year,price)>
+ <!ELEMENT title (#PCDATA)>
+ <!ELEMENT author (#PCDATA)>
+ <!ELEMENT year (#PCDATA)>
+ <!ELEMENT price (#PCDATA)>
+ ]>
+ <bookstore>
+ <book>
+  <title>everyday Italian</title>
+  <author>vamsi</author>
+  <year>2001</year>
+  <price>100.00</price>
+  </book>
+  <book>
+  <title>harray potter</title>
+  <author>jk.rowling</author>
+  <year>2005</year>
+  <price>200.00</price>
+  </book>
+  </bookstore>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+<h2>book detalis</h2>
+<table border="2"><thead>
+<tr bgcolor="green">
+<th>title</th>
+<th>author</th>
+<th>year</th>
+<th>price</th></tr></thead>
+<xsl:for-each select="bookstore/book">
+<tr>
+<td><xsl:value-of select="title"/></td>
+<td><xsl:value-of select="author"/></td>
+<td><xsl:value-of select="year"/></td>
+<td><xsl:value-of select="price"/></td></tr>
+</xsl:for-each>
+</table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>

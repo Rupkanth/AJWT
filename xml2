@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="student.css"?>
+<student_detailes>
+<student>
+<name>Vasireddy Venkatadri Institute of Technology</name>
+<id>20bq5a0516</id>
+<join>2020</join>
+<email>20bq5a0518@vvit.net</email>
+</student>
+<student>
+<name>Vasireddy Venkatadri Institute of Technology</name>
+<id>20bq5a0516</id>
+<join>2020</join>
+<email>20bq5a0516@vvit.net</email>
+</student>
+<student>
+<name>Vasireddy Venkatadri Institute of Technology</name>
+<id>20bq5a0516</id>
+<join>2020</join>
+<email>20bq5a0517@vvit.net</email>
+</student>
+</student_detailes>
+
+id{
+ color:maroon;
+background-color:gray;
+width:100%;
+text-align:center
+}
+name{
+ color:green;
+ font-size:40px;
+background-color:powerblue;
+text-align:center
+}
+join{
+  color:red;
+background-color:teal;
+width:100%;
+font-family:verdana;
+text-align:center
+}
+email{
+color:blue;
+background-color:green;
+text-align:center
+}
+id,name,join,email{ display: block;
+}
